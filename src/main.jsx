@@ -1,6 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
+import Layout from './pages/web/layaout/Layaout.jsx';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -9,7 +10,7 @@ import Home from "./pages/web/home.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
-   // element: <Root />, //TODO: add layout component here
+    element: <Layout />, //TODO: add layout component here
     children: [
       {
         index: true,
